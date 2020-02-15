@@ -38,4 +38,20 @@ public class TopicsService {
 
 	}
 
-}
+	public void updateTopic(String id, Topic topic) {
+		
+		for(int i=0;i<topics.size();i++) {
+			Topic top=  topics.get(i);
+			 if(top.getId().equals(id)) {
+				 topics.add(i, topic);
+				 return;
+			 }
+			}
+			
+			
+			
+		}
+	
+	}
+
+
