@@ -12,12 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TopicsController {
 
+	@Autowired
+	TopicsService topicsService;
+
 	@RequestMapping("/topics")
 	public List<Topic> getallTopics() {
 
-		return Arrays.asList(new Topic("spring", "spring freamwork", "spring frameowrk descripton"),
-				new Topic("Hibernate", "Hibernate freamwork", "Hibernate frameowrk descripton"),
-				new Topic("Maven", "Maven freamwork", "Maven frameowrk descripton"));
+		return topicsService.getallTopics();
 
 	}
 
