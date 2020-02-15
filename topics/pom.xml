@@ -9,7 +9,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.deependra</groupId>
-	<artifactId>topics</artifactId>
+	<artifactId>course-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>topics</name>
 	<description>Topic-course-Lesson</description>
