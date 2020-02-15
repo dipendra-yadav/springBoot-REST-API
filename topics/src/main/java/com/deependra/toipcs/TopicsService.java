@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 @Service
 public class TopicsService {
@@ -16,6 +15,12 @@ public class TopicsService {
 	public List<Topic> getallTopics() {
 
 		return topics;
+
+	}
+
+	public Topic getTopicById(String id) {
+
+		return topics.stream().filter(t -> t.getId().equals(id)).findFirst().get();
 
 	}
 
